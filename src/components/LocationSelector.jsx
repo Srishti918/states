@@ -74,22 +74,24 @@ const LocationSelector = () => {
   const getSelectionSummary = () => {
     if (selectedCity && selectedState && selectedCountry) {
       return (
-        <div  style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "row",
-          }}>
-            <p style={{fontWeight: "bold", fontSize: "20px"}}>You selected{" "} </p>
-          <p style={{ fontWeight: "bolder", color: "black" ,paddingLeft: "5px", fontSize: "25px"}}>
-          {selectedCity}, 
-          </p>
-          <h3 style={{ fontWeight: "bold", color: "grey",paddingLeft: "5px" }}>
-            {selectedState},
-          </h3>
-          <h3 style={{ fontWeight: "bold", color: "grey",paddingLeft: "5px"  }}>
-            {selectedCountry}
-          </h3>
+        // <div  style={{
+        //     display: "flex",
+        //     justifyContent: "center",
+        //     alignItems: "center",
+        //     flexDirection: "row",
+        //   }}>
+        //     <p style={{fontWeight: "bold", fontSize: "20px"}}>You selected{" "} </p>
+        //   <p style={{ fontWeight: "bolder", color: "black" ,paddingLeft: "5px", fontSize: "25px"}}>
+        //   {selectedCity}, 
+        //   </p>
+        //   <h3 style={{ fontWeight: "bold", color: "grey",paddingLeft: "5px" }}>
+        //     {selectedState},
+        //   </h3>
+        //   <h3 style={{ fontWeight: "bold", color: "grey",paddingLeft: "5px"  }}>
+        //     {selectedCountry}
+        //   </h3>
+        <div>
+            <p>You selected <strong>{selectedCity}</strong>, {selectedState}, {selectedCountry}</p>
         </div>
       );
     }
